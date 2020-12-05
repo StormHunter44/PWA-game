@@ -1,28 +1,7 @@
 export default class View {
     constructor(root) {
         this.root = root;
-        document.getElementById("tic-tac-toe").innerHTML = `
-            <div class="tic-game">
-                <div class="header_tictac">
-                    <div class="header__turn"></div>
-                    <div class="header__status"></div>
-                    <button type="button" class="header__restart">
-                        <i class="material-icons">New game</i>
-                    </button>
-                </div>
-                <div class="board">
-                    <div class="board__tile" data-index="0"></div>
-                    <div class="board__tile" data-index="1"></div>
-                    <div class="board__tile" data-index="2"></div>
-                    <div class="board__tile" data-index="3"></div>
-                    <div class="board__tile" data-index="4"></div>
-                    <div class="board__tile" data-index="5"></div>
-                    <div class="board__tile" data-index="6"></div>
-                    <div class="board__tile" data-index="7"></div>
-                    <div class="board__tile" data-index="8"></div>
-                </div>
-            </div>
-        `;
+        //document.getElementById("tic-tac-toe").innerHTML = ` `;
 
         this.onTileClick = undefined;
         this.onRestartClick = undefined;

@@ -16,3 +16,4 @@ view.onRestartClick = function() {
 
 view.update(game);
 
+
