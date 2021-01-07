@@ -13,13 +13,13 @@
               <router-link to="memory"><button class="game-panel"><img class="game-picture" src="../assets/Memory.png"></button></router-link>
             </div>
             <div>
-              <button class="game-panel">Ice hockey</button>
+              <router-link to="reaction-time"><button class="game-panel">Reaction time</button></router-link>
             </div>
             <!--<div class="column">
               <b-button class="game-panel">12345</b-button>
             </div>-->
             <div>
-              <button class="game-panel">*placeholder*</button>
+              <router-link to="crack-the-safe"><button class="game-panel">Crack the safe</button></router-link>
             </div>
             <div>
               <button class="game-panel">*placeholder*</button>

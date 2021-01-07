@@ -6,7 +6,9 @@ import 'buefy/dist/buefy.css'
 import TicTacToe from './TicTacToe.vue'
 import Home from './Home.vue'
 import Memory from './Memory.vue'
-import Tests from './Tests.vue'
+import ReactionTime from './ReactionTime.vue'
+import CrackTheSafe from './CrackTheSafe.vue'
+import Dev from './Dev.vue'
 
 Vue.use(VueRouter);
 
@@ -16,7 +18,9 @@ Vue.config.productionTip = false
 const routes = [
   { path: '/tic-tac-toe', component: TicTacToe },
   { path: '/memory', component: Memory },
-  { path: '/tests', component: Tests },
+  { path: '/reaction-time', component: ReactionTime },
+  { path: '/crack-the-safe', component: CrackTheSafe },
+  { path: '/dev', component: Dev },
   { path: '/', component: Home },
 ]
 
@@ -29,13 +33,4 @@ new Vue({
   router: router,
   render: h => h(App),
 }).$mount('#app')
-
-var vm = new Vue({
-  data: {
-    message: ''
-  },
-  template: '<div>{{ message }}</div>'
-})
-vm.message = "Start";
-
 

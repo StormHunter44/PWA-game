@@ -27,10 +27,12 @@
       </div>
     </transition>
 
-    <p>
-      <button class="memory_new-game return" @click="resetGame">New game</button>
-      <router-link to="/"><button class="memory_new-game return">Home</button></router-link>
-    </p>
+    <div class = "bottom-menu">
+      <div class = "center-attempt">
+        <button class="memory_new-game return" @click="resetGame">New game</button>
+        <router-link to="/" class="router-link-broken"><button class="memory_new-game return">Home</button></router-link>
+      </div>
+    </div>
 
   </div>
 </template>
@@ -109,82 +111,6 @@ export default {
 </script>
 
 <style>
-img {
-  max-width: 100%;
-  height: auto;
-}
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  grid-gap: 20px;
-  padding: 0;
-  max-width: 860px;
-  margin: 0 auto;
-  transition: 300ms;
-}
-
-.cards.is-Waiting {
-  pointer-events: none;
-}
-
-.cards.is-Inactive {
-  opacity: 0.5;
-}
-
-.stats {
-  background: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  margin: 0;
-  padding: 25px;
-  color: white;
-  font-size: 32px;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-.stats li {
-  display: block;
-  text-align: left;
-}
-
-.won {
-  position: fixed;
-  padding: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  border-radius: 5px;
-  z-index: 100;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  min-width: 300px;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 500ms;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.memory_new-game {
-  padding: 12px;
-  font-weight: bold;
-  position: relative;
-  margin-right: 10px;
-  margin-left: 10px;
-  background-color: rgb(238, 228, 255);
-}
-
-#app > p {
-  justify-content: center;
-  position: relative;
-  display: block;
-  bottom: 7px;
-}
 
 </style>
