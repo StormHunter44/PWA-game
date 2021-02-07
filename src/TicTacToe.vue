@@ -4,7 +4,6 @@
 
         <div class="row center">
             <div id="tic-tac-toe">
-                <div class="tic-game">
                 <div class="header_tictac">
                     <div class="header__turn">{{ turn }}</div>
                     <div class="header__status">{{ status }}</div>
@@ -20,7 +19,6 @@
                     <div class="board__tile" v-bind:class="{ board__tile__winner: isActive_7  }" data-index="7" @click = pass_turn_7()>{{ data_index_7 }}</div>
                     <div class="board__tile" v-bind:class="{ board__tile__winner: isActive_8  }" data-index="8" @click = pass_turn_8()>{{ data_index_8 }}</div>
                 </div>
-            </div>
             </div>
         </div>
         <!--class="game-panel current-game-button"-->
@@ -111,6 +109,16 @@ export default {
           this.data_index_6 = "";
           this.data_index_7 = "";
           this.data_index_8 = "";
+          this.isActive_0 = false;
+          this.isActive_1 = false;
+          this.isActive_2 = false;
+          this.isActive_3 = false;
+          this.isActive_4 = false;
+          this.isActive_5 = false;
+          this.isActive_6 = false;
+          this.isActive_7 = false;
+          this.isActive_8 = false;
+          this.isActive_9 = false;
       },
       checkfor_winning_combo() {
 

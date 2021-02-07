@@ -8,6 +8,7 @@ import Home from './Home.vue'
 import Memory from './Memory.vue'
 import ReactionTime from './ReactionTime.vue'
 import CrackTheSafe from './CrackTheSafe.vue'
+import Minesweeper from './Minesweeper.vue'
 import Dev from './Dev.vue'
 
 Vue.use(VueRouter);
@@ -20,6 +21,7 @@ const routes = [
   { path: '/memory', component: Memory },
   { path: '/reaction-time', component: ReactionTime },
   { path: '/crack-the-safe', component: CrackTheSafe },
+  { path: '/minesweeper', component: Minesweeper },
   { path: '/dev', component: Dev },
   { path: '/', component: Home },
 ]
